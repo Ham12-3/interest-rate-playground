@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color Palette */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --border: #E2E8F0;
+  --bg-page: #F8FAFC;
+  --bg-card: #FFFFFF;
+  
+  /* Accent (Blue) */
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-soft: #EFF6FF;
+  
+  /* Status Colors */
+  --positive: #16A34A;
+  --negative: #DC2626;
+  --warning: #D97706;
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--bg-page);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Number/Mono font for rates and percentages */
+.font-mono {
+  font-family: var(--font-mono), 'Courier New', monospace;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
